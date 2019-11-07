@@ -1,32 +1,41 @@
 <template>
-  <v-row align="center" class="my-12 py-12">
-    <v-col cols="12" md="6">
-      <div class="mblock-content">
-        <h2>The secret lies within the bean</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          laboriosam rem hic nam esse dolorem, nemo vero commodi maiores facere.
-        </p>
-        <ShopBtn />
-      </div>
-    </v-col>
-
-    <v-col>
-      <img
-        class="mx-auto d-block"
-        src="@/assets/images/coffee-black.png"
-        alt=""
-      />
-    </v-col>
-  </v-row>
+  <div class="marketing-block">
+    <span class="preheading" v-text="preheading"></span>
+    <component :is="headingTag" class="" v-text="heading" />
+    <p v-text="subheading"></p>
+    <ShopBtn v-if="!hideBtn" />
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    preheading: {
+      type: String,
+      default: undefined
+    },
+    heading: {
+      type: String,
+      default: undefined
+    },
+    subheading: {
+      type: String,
+      default: undefined
+    },
+    headingTag: {
+      type: String,
+      default: 'h2'
+    },
+    hideBtn: {
+      type: Boolean,
+      default: false
+    }
+  }
+}
 </script>
 
 <style lang="sass">
-.mblock-content
+.marketing-block
   margin: 0 auto
   max-width: 500px
 </style>

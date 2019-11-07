@@ -2,47 +2,64 @@
   <div class="home">
     <v-row align="center" class="top-banner">
       <v-col cols="12" md="4">
-        <span>PREMIUM COFFEE</span>
-        <h2>
-          A cup of coffee is one of the most important, simple pleasures in life
-        </h2>
+        <MarketingBlock
+          preheading="Premium Coffee"
+          heading="A cup of coffee is one of the most important, simple pleasures in life."
+          heading-tag="h1"
+        />
       </v-col>
       <v-col class="hidden-sm-and-down" cols="8">
         <img src="@/assets/images/banner.png" alt="Coffee Beans And Cup" />
       </v-col>
     </v-row>
 
-    <MarketingBlock class="flex-row-reverse" />
+    <MarketingSection
+      class="flex-row-reverse"
+      preheading="Premium Coffee"
+      heading="Quality Coffee Cultivated by Good"
+      subheading=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex maiores iste ut odio voluptas eos necessitatibus suscipit."
+      image="coffee-black"
+    />
 
-    <v-container>
-      <v-row>
-        <v-col>
-          <h1>Our Best Deal Section</h1>
-          <v-row align="center">
-            <v-col
-              v-for="(coffee, index) in coffeeProducts"
-              :key="index"
-              cols="12"
-              sm="4"
-            >
-              <CoffeeProduct :coffee="coffee" />
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
-    </v-container>
+    <v-row class="my-12 py-12" style="background-color: #f1eee2;">
+      <v-col>
+        <MarketingBlock
+          class="text-center"
+          preheading="Buy Now"
+          heading="Our Best Deal"
+          subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cumque officiis excepturi doloremque corrupti suscipit."
+          hide-btn
+        />
 
-    <MarketingBlock />
+        <v-row align="center">
+          <v-col
+            v-for="(coffee, index) in coffeeProducts"
+            :key="index"
+            cols="12"
+            sm="4"
+          >
+            <CoffeeProduct :coffee="coffee" />
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+
+    <MarketingSection
+      image="coffee-bronze"
+      heading="The secret Lies Within The Bean"
+      subheading=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          laboriosam rem hic nam esse dolorem, nemo vero commodi maiores facere."
+    />
   </div>
 </template>
 
 <script>
 import CoffeeProduct from '@/components/CoffeeProduct'
-import MarketingBlock from '@/components/MarketingBlock'
+import MarketingSection from '@/components/MarketingSection'
 
 export default {
   components: {
-    MarketingBlock,
+    MarketingSection,
     CoffeeProduct
   },
 
