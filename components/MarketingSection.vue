@@ -12,7 +12,7 @@
     <v-col>
       <img
         class="mx-auto d-block"
-        :src="require(`@/assets/images/${image}.png`)"
+        :src="require(`@/assets/images/${image}`)"
         alt="Marketing Image"
       />
     </v-col>

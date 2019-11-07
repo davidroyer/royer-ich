@@ -18,7 +18,7 @@
       preheading="Premium Coffee"
       heading="Quality Coffee Cultivated by Good"
       subheading=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex maiores iste ut odio voluptas eos necessitatibus suscipit."
-      image="coffee-black"
+      image="coffee-growing.png"
     />
 
     <v-row class="my-12 py-12" style="background-color: #f1eee2;">
@@ -45,7 +45,7 @@
     </v-row>
 
     <MarketingSection
-      image="coffee-bronze"
+      image="coffee-bronze.png"
       heading="The secret Lies Within The Bean"
       subheading=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
           laboriosam rem hic nam esse dolorem, nemo vero commodi maiores facere."
