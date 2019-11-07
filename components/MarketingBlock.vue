@@ -7,6 +7,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
           laboriosam rem hic nam esse dolorem, nemo vero commodi maiores facere.
         </p>
+        <ShopBtn />
       </div>
     </v-col>
 
