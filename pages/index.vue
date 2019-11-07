@@ -1,15 +1,25 @@
 <template>
   <div class="home">
+    <div class="test">
+      <transition name="bounce" appear>
+        <h2 v-if="showTransition">some text</h2>
+      </transition>
+    </div>
     <v-row align="center" class="top-banner">
       <v-col cols="12" md="4">
-        <MarketingBlock
-          preheading="Premium Coffee"
-          heading="A cup of coffee is one of the most important, simple pleasures in life."
-          heading-tag="h1"
-        />
+        <transition name="bounce" appear>
+          <MarketingBlock
+            v-if="showTransition"
+            preheading="Premium Coffee"
+            heading="A cup of coffee is one of the most important, simple pleasures in life."
+            heading-tag="h1"
+          />
+        </transition>
       </v-col>
       <v-col class="hidden-sm-and-down" cols="8">
-        <img src="@/assets/images/banner.png" alt="Coffee Beans And Cup" />
+        <transition name="slide-fade" appear>
+          <img src="@/assets/images/banner.png" alt="Coffee Beans And Cup" />
+        </transition>
       </v-col>
     </v-row>
 
@@ -45,7 +55,7 @@
     </v-row>
 
     <MarketingSection
-      image="coffee-bronze.png"
+      image="beans.png"
       heading="The secret Lies Within The Bean"
       subheading=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
           laboriosam rem hic nam esse dolorem, nemo vero commodi maiores facere."
@@ -63,6 +73,11 @@ export default {
     CoffeeProduct
   },
 
+  data() {
+    return {
+      showTransition: true
+    }
+  },
   computed: {
     coffeeProducts() {
       return this.$store.state.coffeeProducts
