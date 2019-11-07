@@ -7,12 +7,7 @@
 </template>
 
 <script>
-// import ShopBtn from '@/components/ShopBtn'
-
 export default {
-  // components: {
-  //   ShopBtn
-  // },
   props: {
     coffee: {
       type: Object,
