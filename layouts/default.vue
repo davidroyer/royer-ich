@@ -16,27 +16,24 @@
         </v-btn>
       </v-toolbar-items>
     </v-app-bar>
+
     <v-content>
       <v-container fluid>
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer dark app color="#1a1b1e">
-      <span>All Rights Reserved &copy; 2019</span>
-      <v-spacer></v-spacer>
-      <span>+436 701 32 43 92</span>
-    </v-footer>
+
+    <VSiteFooter />
   </v-app>
 </template>
 
 <script>
 export default {
+  components: {
+    VSiteFooter: () => import('@/components/VSiteFooter')
+  },
   data() {
     return {
-      drawer: false,
-      fixed: false,
-      right: true,
-      rightDrawer: false,
       title: 'NOANSA'
     }
   },
@@ -55,5 +52,11 @@ export default {
   min-height: 500px;
   width: 100vw;
   margin-top: -12px;
+}
+
+.v-footer {
+  .footer-text {
+    color: #5c5d5f;
+  }
 }
 </style>
