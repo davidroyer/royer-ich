@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 export default ({ app }) => {
   // eslint-disable-next-line new-cap
   app.AOS = new AOS.init({
+    startEvent: 'onNuxtReady',
     duration: 800
   }) // eslint-disable-line new-cap
 }
