@@ -12,32 +12,19 @@
         />
         <!-- </transition> -->
       </v-col>
-      <v-col class="hidden-sm-and-down" cols="8">
-        <!-- <transition name="slide-fade" appear> -->
-        <img
-          data-aos="fade-left"
-          src="@/assets/images/banner.png"
-          alt="Coffee Beans And Cup"
-        />
-        <!-- </transition> -->
+      <v-col
+        class="hidden-sm-and-down"
+        cols="8"
+        data-aos="fade-left"
+        data-aos-easing="ease"
+      >
+        <img src="@/assets/images/banner.png" alt="Coffee Beans And Cup" />
       </v-col>
     </v-row>
 
-    <v-row>
-      <v-col>
-        <p data-aos="slide-up" data-aos-easing="ease">
-          Paragraph with fade up animation and <code>ease</code> easing.
-        </p>
-      </v-col>
-      <v-col>
-        <p data-aos="zoom-in">
-          Paragraph with fade down animation with the above link as anchor. This
-          makes this paragraph animate before the previous paragraph starts
-          animating.
-        </p></v-col
-      >
-    </v-row>
     <MarketingSection
+      data-aos="fade-right"
+      data-aos-delay="500"
       class="flex-row-reverse"
       preheading="Premium Coffee"
       heading="Quality Coffee Cultivated by Good"
@@ -46,7 +33,7 @@
     />
 
     <v-row class="my-12 py-12" style="background-color: #f1eee2;">
-      <v-col>
+      <v-col data-aos="fade-left" data-aos-delay="500">
         <MarketingBlock
           class="text-center"
           preheading="Buy Now"
@@ -69,6 +56,8 @@
     </v-row>
 
     <MarketingSection
+      data-aos="fade-up"
+      data-aos-delay="500"
       image="beans.png"
       heading="The secret Lies Within The Bean"
       subheading=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti

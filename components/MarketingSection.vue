@@ -2,6 +2,7 @@
   <v-row align="center" class="my-12 py-12">
     <v-col cols="12" md="6">
       <MarketingBlock
+        class="text-center text-md-left"
         :heading-tag="headingTag"
         :preheading="preheading"
         :heading="heading"

@@ -4,11 +4,11 @@ nav:
     path: /
 
   - title: Wholesale
-    path: /
+    path: /wholesale
 
   - title: Locations
-    path: /
+    path: /locations
 
   - title: Our Store
-    path: /
+    path: /our-store
 
