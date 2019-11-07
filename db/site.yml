@@ -1,3 +1,14 @@
-// "Platinum",
-// "Classic",
-// "Modern"
+
+nav:
+  - title: Shop
+    path: /
+
+  - title: Wholesale
+    path: /
+
+  - title: Locations
+    path: /
+
+  - title: Our Store
+    path: /
+

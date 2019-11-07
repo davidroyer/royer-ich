@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import siteDB from '@/db/index.json'
+import siteDB from '@/db/site.yml'
 import { coffee } from '@/db/products.yml'
 
 export const state = () => ({
