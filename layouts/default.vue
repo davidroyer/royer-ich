@@ -59,4 +59,8 @@ export default {
     color: #5c5d5f;
   }
 }
+
+img {
+  max-width: 100%;
+}
 </style>
