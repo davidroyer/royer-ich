@@ -3,13 +3,6 @@
     { "title": "Shop" },
     { "title": "Wholesale" },
     { "title": "locations" }
-  ],
-
-  "products": {
-      "coffees": [
-          "Platinum",
-          "Classic",
-          "Modern"
-      ]
-  }
+  ]
 }
+

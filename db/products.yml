@@ -1,0 +1,9 @@
+coffee:
+  - image: black
+    name: Black Coffee
+
+  - image: bronze
+    name: Bronze Coffee
+
+  - image: white
+    name: White Coffee
