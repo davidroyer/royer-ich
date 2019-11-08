@@ -22,14 +22,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.v-footer {
-  .footer-text {
-    color: #5c5d5f;
-  }
-}
-
-img {
-  max-width: 100%;
-}
-</style>
+<style lang="scss"></style>
