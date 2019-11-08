@@ -12,7 +12,8 @@
       </v-col>
       <v-col
         class="hidden-sm-and-down top-banner-image"
-        cols="7"
+        cols="12"
+        md="7"
         data-aos="fade-left"
         data-aos-easing="ease"
       >
@@ -92,6 +93,7 @@ export default {
   // min-height: 380px;
   width: 100vw;
   margin-top: -12px;
+  height: 90vh;
 }
 
 // @media (min-width: 960px) {
