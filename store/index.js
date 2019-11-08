@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import siteData from '@/db/site.yml'
 import { coffee } from '@/db/products.yml'
 

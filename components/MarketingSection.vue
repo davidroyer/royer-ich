@@ -15,6 +15,7 @@
         class="mx-auto d-block"
         :src="require(`@/assets/images/${image}`)"
         alt="Marketing Image"
+        max-width="500px"
       />
     </v-col>
   </v-row>

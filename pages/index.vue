@@ -2,7 +2,6 @@
   <div class="home">
     <v-row align="center" class="top-banner">
       <v-col cols="12" md="4">
-        <!-- <transition name="bounce" appear> -->
         <MarketingBlock
           data-aos="fade-up"
           data-aos-delay="500"
@@ -10,7 +9,6 @@
           heading="A cup of coffee is one of the most important, simple pleasures in life."
           heading-tag="h1"
         />
-        <!-- </transition> -->
       </v-col>
       <v-col
         class="hidden-sm-and-down"

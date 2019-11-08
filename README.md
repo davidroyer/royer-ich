@@ -4,3 +4,4 @@
 
 - Spacing if off like in banner and top nav
 - Missing a couple sections
+- Meta
