@@ -19,12 +19,6 @@ export default {
     VSiteHeader,
     VSiteFooter: () => import('@/components/VSiteFooter')
   }
-
-  // computed: {
-  //   navItems() {
-  //     return this.$store.state.nav
-  //   }
-  // }
 }
 </script>
 

@@ -21,13 +21,6 @@
 import { mapState, mapMutations } from 'vuex'
 
 export default {
-  // props: {
-  //   navItems: {
-  //     type: Array,
-  //     required: true
-  //   }
-  // },
-
   computed: {
     ...mapState(['drawer']),
 
