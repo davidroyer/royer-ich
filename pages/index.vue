@@ -11,7 +11,7 @@
         />
       </v-col>
       <v-col
-        class="hidden-sm-and-down top-banner-image"
+        class="top-banner-image"
         cols="12"
         md="7"
         data-aos="fade-left"
