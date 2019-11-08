@@ -2,8 +2,6 @@
 
 > For Developer Position
 
-<br>
-
 ## Notable Items
 
 - The clean `layout.vue` file
