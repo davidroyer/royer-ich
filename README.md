@@ -2,7 +2,17 @@
 
 > For Developer Position
 
-## Things to note that i'm aware of
+<br>
+
+## Notable Items
+
+- The clean `layout.vue` file
+
+---
+
+<br>
+
+## Things To Note That I'm Aware Of Still Need Adjustments
 
 - Spacing if off like in banner and top nav
 - Missing a couple sections
