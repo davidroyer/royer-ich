@@ -1,6 +1,7 @@
 <template>
-  <v-navigation-drawer v-model="drawerState" right app>
+  <v-navigation-drawer v-model="drawerState" temporary right app>
     <v-list>
+      <v-list-item to="/">Home</v-list-item>
       <v-list-item
         v-for="(item, index) in navItems"
         :key="index"
@@ -17,12 +18,35 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex'
+
 export default {
-  props: {
-    navItems: {
-      type: Array,
-      required: true
+  // props: {
+  //   navItems: {
+  //     type: Array,
+  //     required: true
+  //   }
+  // },
+
+  computed: {
+    ...mapState(['drawer']),
+
+    drawerState: {
+      get() {
+        return this.drawer
+      },
+      set(val) {
+        this.setDrawer(val)
+      }
+    },
+
+    navItems() {
+      return this.$store.state.nav
     }
+  },
+
+  methods: {
+    ...mapMutations(['setDrawer', 'toggleDrawer'])
   }
 }
 </script>

@@ -4,11 +4,20 @@ import { coffee } from '@/db/products.yml'
 
 export const state = () => ({
   nav: siteDB.nav,
-  coffeeProducts: coffee
+  coffeeProducts: coffee,
+  drawer: false
 })
 
 export const mutations = {
   increment(state) {
     state.counter++
+  },
+
+  setDrawer(state, payload) {
+    state.drawer = payload
+  },
+
+  toggleDrawer(state, payload) {
+    state.drawer = !state.drawer
   }
 }
