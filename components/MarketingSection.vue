@@ -1,5 +1,5 @@
 <template>
-  <v-row align="center" class=" my-12 py-12" style="background-color: #fff;">
+  <v-row align="center" class="my-12 py-12">
     <v-col cols="12" md="6">
       <MarketingBlock
         class="text-center text-md-left"
@@ -12,10 +12,9 @@
 
     <v-col>
       <img
-        class="mx-auto d-block"
+        class="marketing-section-image mx-auto d-block"
         :src="require(`@/assets/images/${image}`)"
         alt="Marketing Image"
-        max-width="500px"
       />
     </v-col>
   </v-row>
@@ -49,7 +48,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.white-bg {
-  background-color: #fff !important;
+.marketing-section-image {
+  max-width: 500px;
 }
 </style>

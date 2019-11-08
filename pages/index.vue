@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <v-row align="center" class="top-banner">
-      <v-col cols="12" md="4" offset-md="1">
+    <v-row align="center" class="top-banner py-12">
+      <v-col cols="12" md="5">
         <MarketingBlock
           data-aos="fade-up"
           data-aos-delay="500"
@@ -12,11 +12,11 @@
       </v-col>
       <v-col
         class="hidden-sm-and-down top-banner-image"
-        cols="8"
+        cols="7"
         data-aos="fade-left"
         data-aos-easing="ease"
       >
-        <!-- <img src="@/assets/images/banner.png" alt="Coffee Beans And Cup" /> -->
+        <img src="@/assets/images/banner.png" alt="Coffee Beans And Cup" />
       </v-col>
     </v-row>
 
@@ -30,7 +30,7 @@
       image="coffee-growing.png"
     />
 
-    <v-row class="my-12 py-12">
+    <v-row class="my-12 py-12 beige-bg">
       <v-col data-aos="fade-left" data-aos-delay="500">
         <MarketingBlock
           class="text-center"
@@ -57,7 +57,6 @@
       data-aos="fade-up"
       data-aos-delay="500"
       image="beans.png"
-      class="white-bg"
       heading="The secret Lies Within The Bean"
       subheading=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
           laboriosam rem hic nam esse dolorem, nemo vero commodi maiores facere."
@@ -84,16 +83,23 @@ export default {
 </script>
 
 <style lang="scss">
-.white-bg {
-  background-color: #fff !important;
+.beige-bg {
+  background-color: #f1eee2;
 }
 
-@media (min-width: 960px) {
-  .top-banner {
-    background-image: url('~assets/images/banner.png');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 65%;
-  }
+.top-banner {
+  background-color: #f1eee2;
+  // min-height: 380px;
+  width: 100vw;
+  margin-top: -12px;
 }
+
+// @media (min-width: 960px) {
+//   .top-banner {
+//     background-image: url('~assets/images/banner.png');
+//     background-position: top right;
+//     background-repeat: no-repeat;
+//     background-size: 65%;
+//   }
+// }
 </style>

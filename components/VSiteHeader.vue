@@ -1,7 +1,6 @@
 <template>
-  <v-app-bar flat app color="transparent">
+  <v-app-bar flat app color="#f1eee2">
     <v-toolbar-title @click="$router.push('/')" v-text="title" />
-
     <v-spacer />
 
     <v-desktop-nav />

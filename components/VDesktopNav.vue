@@ -1,6 +1,12 @@
 <template>
   <v-toolbar-items class="hidden-sm-and-down">
-    <v-btn v-for="(item, index) in navItems" :key="index" :to="item.path" text>
+    <v-btn
+      v-for="(item, index) in navItems"
+      :key="index"
+      nuxt
+      :to="item.path"
+      text
+    >
       {{ item.title }}
     </v-btn>
     <v-btn icon>

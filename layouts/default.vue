@@ -23,13 +23,6 @@ export default {
 </script>
 
 <style lang="scss">
-.top-banner {
-  background-color: #f1eee2;
-  min-height: 380px;
-  width: 100vw;
-  margin-top: -12px;
-}
-
 .v-footer {
   .footer-text {
     color: #5c5d5f;
