@@ -49,6 +49,6 @@ export default {
 
 <style lang="scss" scoped>
 .marketing-section-image {
-  max-width: 500px;
+  width: 500px;
 }
 </style>
