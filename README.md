@@ -1,6 +1,6 @@
 # David Royer - Nuxt.js & Vuetify Assessment
 
-> For Developer Position
+<!-- > For Developer Position -->
 
 ## Notable Items
 
