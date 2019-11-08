@@ -27,7 +27,7 @@
       class="flex-row-reverse"
       preheading="Premium Coffee"
       heading="Quality Coffee Cultivated by Good"
-      subheading=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex maiores iste ut odio voluptas eos necessitatibus suscipit."
+      subheading=" Our love for specialty coffee is never-ending. With over 365 days a year at origin working with the best growers on the planet, only the best beans make the grade."
       image="coffee-growing.png"
     />
 
@@ -37,7 +37,7 @@
           class="text-center"
           preheading="Buy Now"
           heading="Our Best Deal"
-          subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cumque officiis excepturi doloremque corrupti suscipit."
+          subheading="Coffee company with a straightforward mission: to make an office and on-the-go cup of coffee that we’d like to drink ourselves"
           hide-btn
         />
 
@@ -59,8 +59,7 @@
       data-aos-delay="500"
       image="beans.png"
       heading="The secret Lies Within The Bean"
-      subheading=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          laboriosam rem hic nam esse dolorem, nemo vero commodi maiores facere."
+      subheading="You can’t imagine a day without a cup of coffee and we believe that your office and on-the-go coffee should never be a compromise."
     />
   </div>
 </template>
