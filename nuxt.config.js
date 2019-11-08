@@ -1,7 +1,6 @@
-import colors from 'vuetify/es5/util/colors'
-
 export default {
   mode: 'universal',
+
   /*
    ** Headers of the page
    */
@@ -19,60 +18,40 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+
   /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
+
   /*
    ** Global CSS
    */
   css: ['@/assets/main.scss'],
-  // css: ['@/assets/main.css'],
+
   /*
    ** Plugins to load before mounting the App
    */
   plugins: ['@/plugins/global-components', '@/plugins/aos.client'],
+
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify'
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/vuetify'],
+
   /*
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/pwa'],
-  /*
-   ** vuetify module configuration
-   ** https://github.com/nuxt-community/vuetify-module
-   */
+
   vuetify: {
-    treeShaking: true,
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      // dark: true,
-      themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
-    }
+    treeShaking: true
   },
+
   /*
    ** Build configuration
    */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend(config, ctx) {
       config.module.rules.push({
         test: /\.ya?ml$/,

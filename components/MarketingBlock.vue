@@ -34,8 +34,9 @@ export default {
 }
 </script>
 
-<style lang="sass">
-.marketing-block
-  margin: 0 auto
-  max-width: 500px
+<style lang="scss">
+.marketing-block {
+  margin: 0 auto;
+  max-width: 500px;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer v-model="drawerState" temporary right app>
+  <v-navigation-drawer v-model="drawerState" right app temporary>
     <v-list>
       <v-list-item to="/">Home</v-list-item>
       <v-list-item

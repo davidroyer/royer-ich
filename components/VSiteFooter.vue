@@ -11,17 +11,15 @@
         <v-text-field
           style="width: 300px"
           class="mx-auto text-center"
-          name="name"
-          label="label"
+          name="email"
+          label="Email"
           value=""
           placeholder="yourname@email.com"
           single-line
         ></v-text-field>
       </v-col>
     </v-row>
-    <!-- <v-row>
-      <v-col cols="12">
-      </v-col> -->
+
     <v-row class="v-footer-bottom px-4">
       <v-col>
         <span class="footer-text">All Rights Reserved &copy; 2019</span>
@@ -39,7 +37,6 @@ export default {}
 
 <style lang="scss" scoped>
 .newsletter {
-  // background-color: #393939;
   width: 100%;
 
   input {

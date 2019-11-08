@@ -1,9 +1,23 @@
-// TRANSITIONS
-.v-footer {
-  .footer-text {
-    color: #5c5d5f;
-  }
+body {
+  overflow-x: hidden;
 }
+
+
+.v {
+  &-toolbar {
+    &__title {
+      cursor: pointer;
+    }
+  }
+
+  &-footer {
+    .footer-text {
+      color: #5c5d5f;
+    }
+  }
+  
+}
+
 
 img {
   max-width: 100%;

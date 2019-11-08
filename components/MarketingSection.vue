@@ -1,5 +1,5 @@
 <template>
-  <v-row align="center" class="my-12 py-12">
+  <v-row align="center" class="my-6 py-6">
     <v-col cols="12" md="6">
       <MarketingBlock
         class="text-center text-md-left"

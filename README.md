@@ -1,4 +1,6 @@
-# Nuxt.js & Vuetify.js
+# David Royer - Nuxt.js & Vuetify Assessment
+
+> For Developer Position
 
 ## Things to note that i'm aware of
 
