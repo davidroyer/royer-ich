@@ -25,7 +25,7 @@ export default {
 <style lang="scss">
 .top-banner {
   background-color: #f1eee2;
-  min-height: 500px;
+  min-height: 380px;
   width: 100vw;
   margin-top: -12px;
 }

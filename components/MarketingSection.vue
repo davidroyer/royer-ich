@@ -1,5 +1,5 @@
 <template>
-  <v-row align="center" class="my-12 py-12">
+  <v-row align="center" class=" my-12 py-12" style="background-color: #fff;">
     <v-col cols="12" md="6">
       <MarketingBlock
         class="text-center text-md-left"
@@ -47,3 +47,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.white-bg {
+  background-color: #fff !important;
+}
+</style>

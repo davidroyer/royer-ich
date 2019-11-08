@@ -1,3 +1,8 @@
+#app.v-application {
+  background: #f1eee2;
+}
+
+// TRANSITIONS
 .page-enter-active, .page-leave-active {
     transition: opacity .5s
   }

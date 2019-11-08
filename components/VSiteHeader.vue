@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar flat app color="#f1eee2">
+  <v-app-bar flat app color="transparent">
     <v-toolbar-title @click="$router.push('/')" v-text="title" />
 
     <v-spacer />
