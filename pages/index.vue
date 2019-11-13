@@ -4,7 +4,7 @@
       <v-col cols="12" md="5">
         <MarketingBlock
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="0"
           preheading="Premium Coffee"
           heading="A cup of coffee is one of the most important, simple pleasures in life."
           heading-tag="h1"
@@ -62,7 +62,7 @@
       subheading="You can’t imagine a day without a cup of coffee and we believe that your office and on-the-go coffee should never be a compromise."
     />
 
-    <ImageGrid />
+    <ImageGrid data-aos="fade-left" data-aos-delay="300" />
   </div>
 </template>
 
@@ -93,18 +93,8 @@ export default {
 
 .top-banner {
   background-color: #f1eee2;
-  // min-height: 380px;
   width: 100vw;
   margin-top: -12px;
   height: 90vh;
 }
-
-// @media (min-width: 960px) {
-//   .top-banner {
-//     background-image: url('~assets/images/banner.png');
-//     background-position: top right;
-//     background-repeat: no-repeat;
-//     background-size: 65%;
-//   }
-// }
 </style>
