@@ -61,17 +61,21 @@
       heading="The secret Lies Within The Bean"
       subheading="You can’t imagine a day without a cup of coffee and we believe that your office and on-the-go coffee should never be a compromise."
     />
+
+    <ImageGrid />
   </div>
 </template>
 
 <script>
 import CoffeeProduct from '@/components/CoffeeProduct'
 import MarketingSection from '@/components/MarketingSection'
+import ImageGrid from '@/components/ImageGrid'
 
 export default {
   components: {
-    MarketingSection,
-    CoffeeProduct
+    CoffeeProduct,
+    ImageGrid,
+    MarketingSection
   },
 
   computed: {
