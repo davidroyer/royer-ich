@@ -5,6 +5,5 @@ export default ({ app }) => {
   // eslint-disable-next-line new-cap
   app.AOS = new AOS.init({
     duration: 800
-    // once: true
   })
 }
