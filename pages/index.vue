@@ -14,7 +14,6 @@
         </transition> -->
           <MarketingBlock
             data-aos="fade-up"
-            data-aos-delay="0"
             preheading="Premium Coffee"
             heading="A cup of coffee is one of the most important, simple pleasures in life."
             heading-tag="h1"
