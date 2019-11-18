@@ -1,31 +1,49 @@
 <template>
   <div class="home">
     <v-row align="center" class="top-banner py-12">
-      <v-col cols="12" md="5">
-        <v-fade-transition>
+      <template v-if="mounted">
+        <v-col cols="12" md="5">
+          <!-- <transition name="fade" appear>
+
+          <MarketingBlock
+            v-if="mounted"
+            preheading="Premium Coffee"
+            heading="A cup of coffee is one of the most important, simple pleasures in life."
+            heading-tag="h1"
+          />
+        </transition> -->
+          <MarketingBlock
+            data-aos="fade-up"
+            data-aos-delay="0"
+            preheading="Premium Coffee"
+            heading="A cup of coffee is one of the most important, simple pleasures in life."
+            heading-tag="h1"
+          />
+          <!-- <v-fade-transition>
           <MarketingBlock
             preheading="Premium Coffee"
             heading="A cup of coffee is one of the most important, simple pleasures in life."
             heading-tag="h1"
           />
-        </v-fade-transition>
-        <!-- <MarketingBlock
+        </v-fade-transition> -->
+          <!-- <MarketingBlock
           data-aos="fade-up"
           data-aos-delay="0"
           preheading="Premium Coffee"
           heading="A cup of coffee is one of the most important, simple pleasures in life."
           heading-tag="h1"
         /> -->
-      </v-col>
-      <v-col
-        class="top-banner-image"
-        cols="12"
-        md="7"
-        data-aos="fade-left"
-        data-aos-easing="ease"
-      >
-        <img src="@/assets/images/banner.png" alt="Coffee Beans And Cup" />
-      </v-col>
+        </v-col>
+        <v-col
+          class="top-banner-image"
+          cols="12"
+          md="7"
+          data-aos="fade-left"
+          data-aos-easing="ease"
+        >
+          <img src="@/assets/images/banner.png" alt="Coffee Beans And Cup" />
+        </v-col>
+      </template>
     </v-row>
 
     <MarketingSection
@@ -84,11 +102,17 @@ export default {
     ImageGrid,
     MarketingSection
   },
-
+  data: () => ({
+    mounted: false
+  }),
   computed: {
     coffeeProducts() {
       return this.$store.state.coffeeProducts
     }
+  },
+
+  mounted() {
+    this.mounted = true
   }
 }
 </script>
